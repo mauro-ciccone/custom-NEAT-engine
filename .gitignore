@@ -1,0 +1,14 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python caching (compiled bytecode)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating System files (stops your Mac/Windows from polluting the repo)
+.DS_Store
+Thumbs.db
