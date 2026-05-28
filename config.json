@@ -1,0 +1,16 @@
+{
+    "population_size": 150,
+    "c1": 1.0,
+    "c2": 1.0,
+    "c3": 0.4,
+    "compatibility_threshold": 3.0,
+    "genome_mutate_weights_prob" : 0.8,
+    "mutate_weight_uniform_prob" : 0.9,
+    "mutate_weight_randome_prob" : 0.1,
+    "disable_inherited_gene_prob" : 0.75,
+    "offspring_from_mutation_percent" : 0.25,
+    "interspecies_mating_rate" : 0.001,
+    "new_node_mutation_prob": 0.03,
+    "new_link_mutation_prob": 0.05,
+    "activation_function" : "sigmoid"
+}
