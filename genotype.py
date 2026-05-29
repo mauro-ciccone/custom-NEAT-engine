@@ -26,6 +26,8 @@ class Synapse:
 
 class Genome:
     def __init__(self, config: dict):
+        self.fitness: float = 0.0
+
         self.neurons: dict[int, Neuron] = {}
 
         self.neuron_ids: list[int] = []
