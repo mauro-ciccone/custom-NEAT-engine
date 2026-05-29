@@ -158,5 +158,8 @@ class Genome:
     
     def mutate_toggle_connection(self):
 
+        if not self.synapses:
+            return
+
         synapse = random.choice(self.synapses)
         synapse.is_enabled = not synapse.is_enabled

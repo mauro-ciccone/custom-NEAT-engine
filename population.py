@@ -1,7 +1,9 @@
-from genotype import Neuron, Synapse
+from genotype import Genome
 
 class Population:
+
     def __init__(self, config: dict) -> None:
+
         self.hidden_neurons_history: dict[tuple[int, int], int] = {}
         self.synapses_history: dict[tuple[int, int], int] = {}
 
@@ -18,7 +20,7 @@ class Population:
 
         for in_node in inputs_and_bias:
             for out_node in outputs:
-                self.synapses_history[(in_node, out_node)] = self.global_innov_counter
-                self.global_innov_counter += 1
-
-
+                self.synapses_history[(in_node, out_node)] = self.global_synapse_counter
+                self.global_synapse_counter += 1
+        
+        self.genomes = [Genome(config) for _ in range(config["population_size"])]
