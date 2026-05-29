@@ -2,16 +2,13 @@ from enum import Enum
 import random
 
 class NeuronType(Enum):
-
     BIAS = "bias"
     INPUT = "input"
     HIDDEN = "hidden"
     OUTPUT = "output"
 
 class Neuron:
-
     def __init__(self, neuron_id: int, neuron_type: NeuronType) -> None:
-
         self.id = neuron_id
 
         if not isinstance(neuron_type, NeuronType):
@@ -20,9 +17,7 @@ class Neuron:
         self.type = neuron_type
 
 class Synapse:
-
     def __init__(self, input_node_id: int, output_node_id: int, weight: float, innovation_number: int) -> None:
-
         self.in_node_id = input_node_id
         self.out_node_id = output_node_id
         self.weight = weight
@@ -30,9 +25,7 @@ class Synapse:
         self.innovation_id = innovation_number
 
 class Genome:
-
     def __init__(self, config: dict):
-
         self.neurons: dict[int, Neuron] = {}
 
         self.neuron_ids: list[int] = []
@@ -70,7 +63,6 @@ class Genome:
                 innovation_counter += 1
     
     def mutate_weights(self, config: dict):
-
         for synapse in self.synapses:
             if random.random() <= config["mutate_weight_replace_prob"]:
                 synapse.weight = random.uniform(config["weight_min_value"], config["weight_max_value"])
@@ -80,7 +72,6 @@ class Genome:
                 synapse.weight = max(config["weight_min_value"], min(config["weight_max_value"], synapse.weight))
 
     def mutate_add_neuron(self, hidden_neurons_history: dict[tuple[int, int], int], synapses_history: dict[tuple[int, int], int], global_neuron_counter: int, global_synapse_counter: int) -> tuple[int, int]:
-
         enabled_synapses = [s for s in self.synapses if s.is_enabled]
 
         if len(enabled_synapses) == 0:
@@ -128,7 +119,6 @@ class Genome:
         return (global_neuron_counter, global_synapse_counter)
     
     def mutate_add_synapse(self, synapses_history: dict[tuple[int, int], int], global_synapse_counter: int, config: dict) -> int:
-        
         possible_in = self.neuron_ids
         possible_out = self.hidden + self.outputs
 
@@ -157,7 +147,6 @@ class Genome:
         return global_synapse_counter
     
     def mutate_toggle_connection(self):
-
         if not self.synapses:
             return
 

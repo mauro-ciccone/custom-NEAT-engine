@@ -1,9 +1,7 @@
 from genotype import Genome
 
 class Population:
-
     def __init__(self, config: dict) -> None:
-
         self.hidden_neurons_history: dict[tuple[int, int], int] = {}
         self.synapses_history: dict[tuple[int, int], int] = {}
 

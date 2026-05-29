@@ -1,62 +1,65 @@
+from genotype import NeuronType, Genome
+import math
 
 
-class Phenotype:
-    def topological_sort(self):
-        topo_order = []
-        visited = set()
+class Node:
+    def __init__(self, node_id: int, node_type: NeuronType) -> None:
+        self.id = node_id
+        self.current_value: float = 0.0
+        self.next_value: float = 0.0
+        self.type = node_type
 
-        for start_node in self.all_starting_nodes:
-            if start_node not in visited:
-                self._topo_dfs(start_node, visited, topo_order)
+class Connection:
+    def __init__(self, in_node: Node, out_node: Node, weight: float) -> None:
+        self.in_node = in_node
+        self.out_node = out_node
+        self.weight = weight
+
+class NeuralNetwork:
+    def __init__(self, genome: Genome, config: dict) -> None:
+        self.nodes: dict[int, Node] = {}
+        self.connections: list[Connection] = []
+
+        self.input_nodes: list[Node] = []
+        self.output_nodes: list[Node] = []
+
+        self.activation_functions = {
+            "sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x*4.9, 100), -100))), # Clamped to prevent math overflow errors
+            "tanh": math.tanh,
+            "relu": lambda x: max(0.0, x)
+        }
+
+        self.activation_function = self.activation_functions.get(config["activation_function"], self.activation_functions.get("sigmoid", math.tanh))
+
+        for node_id, neuron_gene in genome.neurons.items():
+            physical_node = Node(node_id, neuron_gene.type)
+            self.nodes[node_id] = physical_node
+
+            if physical_node.type == NeuronType.BIAS:
+                physical_node.current_value = 1.0 
+            elif physical_node.type == NeuronType.INPUT:
+                self.input_nodes.append(physical_node)
+            elif physical_node.type == NeuronType.OUTPUT:
+                self.output_nodes.append(physical_node)
         
+        for synapse in genome.synapses:
+            if synapse.is_enabled:
+                in_node = self.nodes[synapse.in_node_id]
+                out_node = self.nodes[synapse.out_node_id]
 
-        self.topo_order_nodes = topo_order[::-1]
-
-    def _topo_dfs(self, current_node, visited, topo_order):
-        visited.add(current_node)
-
-        for connection in current_node.out_connections:
-            next_node = connection.out_node
-            if next_node not in visited:
-                self._topo_dfs(next_node, visited, topo_order)
-        
-        topo_order.append(current_node)
+                physical_conn = Connection(in_node, out_node, synapse.weight)
+                self.connections.append(physical_conn)
     
-    def feed_forward(self, sensor_data):
-
-        for i in range(len(sensor_data)):
-            self.input_nodes[i].value = sensor_data[i]
+    def feed_forward(self, input_data: list[float]) -> list[float]:
+        for i, input_value in enumerate(input_data):
+            self.input_nodes[i].current_value = input_value
         
-        not_start_nodes = [node for node in self.nodes if node not in self.all_starting_nodes]
-
-        for node in not_start_nodes:
-            node.value = 0
-
-        for node in self.topo_order_nodes:
-            if node not in self.all_starting_nodes:
-                node.value = math.tanh(node.value)
-            for connection in node.out_connections:
-                if connection.is_enabled:
-                    connection.fire()
-                    
+        for connection in self.connections:
+            connection.out_node.next_value += connection.in_node.current_value*connection.weight
         
-        return [node.value for node in self.output_nodes]
-    
-    def would_cause_cycle(self, in_node, out_node):
- 
-        visited = set()
-
-        return self._has_path(out_node, in_node, visited)
-
-    def _has_path(self, current_node, target_node, visited):
-        if current_node == target_node:
-            return True
+        for node in self.nodes.values():
+            if node.type in (NeuronType.HIDDEN, NeuronType.OUTPUT):
+                node.current_value = self.activation_function(node.next_value)
+                node.next_value = 0
         
-        visited.add(current_node)
-        
-        for connection in current_node.out_connections:
-            if connection.out_node not in visited:
-                if self._has_path(connection.out_node, target_node, visited):
-                    return True
-        
-        return False
+        return [node.current_value for node in self.output_nodes]
