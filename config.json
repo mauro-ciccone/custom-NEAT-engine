@@ -15,7 +15,8 @@
     "activation_function" : "sigmoid",
     "input_counts" : 2,
     "output_counts" : 1,
-    "weight_mutate_power": 0.5,
-    "weight_max_value": 3.0,
-    "weight_min_value": -3.0
+    "weight_mutate_power" : 0.5,
+    "weight_max_value" : 3.0,
+    "weight_min_value" : -3.0,
+    "inherit_average_weight" : false
 }
