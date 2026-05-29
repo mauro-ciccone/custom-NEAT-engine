@@ -64,6 +64,58 @@ class Genome:
                 self.synapses.append(Synapse(startnode, output, initial_weight, innovation_counter))
                 innovation_counter += 1
     
+    def to_dict(self) -> dict:
+        return {
+            "fitness": self.fitness,
+            "neurons": [{"id": n.id, "type": n.type.value} for n in self.neurons.values()],
+            "synapses": [
+                {
+                    "in": s.in_node_id, 
+                    "out": s.out_node_id, 
+                    "weight": s.weight, 
+                    "innov": s.innovation_id, 
+                    "enabled": s.is_enabled
+                } for s in self.synapses
+            ]
+        }
+    
+    @classmethod
+    def from_dict(cls, data: dict, config: dict) -> 'Genome':
+        genome = cls.__new__(cls)
+        genome.fitness = data["fitness"]
+        
+        genome.neurons = {}
+        genome.neuron_ids = []
+        genome.inputs = []
+        genome.outputs = []
+        genome.inputs_and_bias = []
+        genome.hidden = []
+        
+        for n_data in data["neurons"]:
+            n_id = n_data["id"]
+            n_type = NeuronType(n_data["type"]) # Converts string "hidden" back to Enum!
+            
+            genome.neurons[n_id] = Neuron(n_id, n_type)
+            genome.neuron_ids.append(n_id)
+            
+            if n_type == NeuronType.BIAS:
+                genome.inputs_and_bias.append(n_id)
+            elif n_type == NeuronType.INPUT:
+                genome.inputs.append(n_id)
+                genome.inputs_and_bias.append(n_id)
+            elif n_type == NeuronType.OUTPUT:
+                genome.outputs.append(n_id)
+            elif n_type == NeuronType.HIDDEN:
+                genome.hidden.append(n_id)
+                
+        genome.synapses = []
+        for s_data in data["synapses"]:
+            syn = Synapse(s_data["in"], s_data["out"], s_data["weight"], s_data["innov"])
+            syn.is_enabled = s_data["enabled"]
+            genome.synapses.append(syn)
+            
+        return genome
+    
     def mutate_weights(self, config: dict):
         for synapse in self.synapses:
             if random.random() <= config["mutate_weight_replace_prob"]:
@@ -107,7 +159,7 @@ class Genome:
             synapses_history[first_half_key] = first_half_id
             global_synapse_counter += 1
 
-        self.synapses.append(Synapse(in_node, new_node_id, 1, global_synapse_counter))
+        self.synapses.append(Synapse(in_node, new_node_id, 1, first_half_id))
         
         if second_half_key in synapses_history:
             second_half_id = synapses_history[second_half_key]
@@ -116,7 +168,7 @@ class Genome:
             synapses_history[second_half_key] = second_half_id
             global_synapse_counter += 1
 
-        self.synapses.append(Synapse(new_node_id, out_node, target_synapse.weight, global_synapse_counter))
+        self.synapses.append(Synapse(new_node_id, out_node, target_synapse.weight, second_half_id))
         
         return (global_neuron_counter, global_synapse_counter)
     
@@ -154,3 +206,48 @@ class Genome:
 
         synapse = random.choice(self.synapses)
         synapse.is_enabled = not synapse.is_enabled
+
+    def distance_to(self, other_genome: 'Genome', config: dict) -> float:
+        
+        synapses1 = sorted(self.synapses, key=lambda x: x.innovation_id)
+        synapses2 = sorted(other_genome.synapses, key=lambda x: x.innovation_id)
+
+        i = 0
+        j = 0
+
+        matching = 0
+        disjoint = 0
+        weight_diff_sum = 0.0
+
+        while i < len(synapses1) and j < len(synapses2):
+            innov1 = synapses1[i].innovation_id
+            innov2 = synapses2[j].innovation_id
+
+            if innov1 == innov2:
+                matching += 1
+                weight_diff_sum += abs(synapses1[i].weight - synapses2[j].weight)
+                i += 1
+                j += 1
+            elif innov1 < innov2:
+                disjoint += 1
+                i += 1
+            else:
+                disjoint += 1
+                j += 1
+
+        excess = (len(synapses1) - i) + (len(synapses2) - j)
+
+        N = max(len(synapses1), len(synapses2))
+        
+        if N < 20:
+            N = 1
+
+        W = (weight_diff_sum / matching) if matching > 0 else 0.0
+
+        c1 = config.get("c1", 1.0)
+        c2 = config.get("c2", 1.0)
+        c3 = config.get("c3", 0.4)
+
+        distance = (c1 * excess / N) + (c2 * disjoint / N) + (c3 * W)
+        
+        return distance

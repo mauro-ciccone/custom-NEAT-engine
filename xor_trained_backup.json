@@ -1,0 +1,6612 @@
+{
+    "global_neuron_counter": 4,
+    "global_synapse_counter": 3,
+    "synapses_history": {
+        "0,3": 0,
+        "1,3": 1,
+        "2,3": 2
+    },
+    "hidden_neurons_history": {},
+    "genomes": [
+        {
+            "fitness": 2.000154168955585,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.7912560273892915,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.8032200042926627,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.4156418194319995,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.998031766620903,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2376289125884183,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.3859629084042844,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.8076975359155902,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999862139666313,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.2820707928525383,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.9474652540088355,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.279424221377326,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.02180052113537,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.7751500513594496,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.1883757021286314,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.2363591900159685,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.7245300321947026,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.04437398971463624,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.2811036126775903,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.5693257446891655,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000343621239827,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.094921273721261,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.8848282603638884,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.8813864589742799,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.085477979738372,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.6984745964589276,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.0948556308474604,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.5709267476249069,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.2131748459031066,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.6063853435310795,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.0704872072093874,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.33354652706010324,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0017137780580474,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.2980399732260066,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.0157989481195395,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.5236966272907955,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0428319330733924,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.032516157136936,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5118475257543134,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.8774180835046081,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.998845718122221,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.782289681248689,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.403266414623991,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.0875201015950324,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.2767861492566355,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.9849532971933466,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.7896795586940994,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.2974957322280065,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999963894105388,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.5574726675135993,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.3943553076249016,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.3157653415009767,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.8107156716933352,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.4717546497503495,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.1319564613781044,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.824665272622724,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.794828089354125,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.263791246350523,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.669504523043206,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.889733207382265,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000000171442838,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.9395336611028835,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.8678685406358637,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.0064937000092935016,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9918332191303616,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.7135639629486388,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.7396920281140584,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.128979193569325,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.4530366398441297,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.529609846072856,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.7880375289477444,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.5914722507909127,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9688030178640026,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.4359013237859792,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.22920236212238443,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.6047804154277925,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.028993141550285,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.37044188701436465,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.05412181982167752,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.048598406364327,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000988431207682,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.075880059200472,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.260606124185327,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.398802505074439,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.999994265343498,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.6475717132188645,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.25391272659956066,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.8528630945260414,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.3965880001188977,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.2276831586090151,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.935218867667567,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.5824053646994107,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.3742066011211227,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.0818816258619366,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.710613092635108,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.1915000850648458,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.3602904096616635,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.6996377716459516,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.4186989307190894,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.3515566243305948,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.2026487197062905,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.022140843399605,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.7515921145595454,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.242237111756405,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999758773834926,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.2685055663374243,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.1966976862376999,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.884663253173267,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.194421657623363,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.203408901760118,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.5884321129564816,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.9134582286174782,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9984691932783338,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.270926119048858,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.9503437948722588,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.6477552929412127,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.5562623394554964,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.7013438661880844,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.8711273479765107,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.691226496932674,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.9350161655622786,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.8568939941295692,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.7378326655937464,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.45740174011447,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999538346756691,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.0373375280744392,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.3331394674897026,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.6764722450287879,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0516517644166696,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.5829885174998157,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.800477027340222,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.732775787453646,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999096943095955,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.722038504249076,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.8991879663943174,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.11023004020742633,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.5693065299939017,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.0465526706720216,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.1319642944815573,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.7698123655460831,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.1650581043109038,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.2454353704031238,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.5924804832467323,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.218335066389076,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.000235116607507,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.4777435833043855,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.7966689931150572,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.48496083859637196,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000031572008856,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.582625677085389,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.9223653154496221,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.639375760936158,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.1677294664494626,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.401408618386478,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.1067838948140825,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.0300566699678066,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0265414432556197,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.5994517668121722,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.15852278040655898,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.364421886125869,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.9280186202146625,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.7415852320193634,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.852890306475093,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.4597222800786838,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0555817543133,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.8051359260447812,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.6742298643745714,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.993322079181464,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.8957581750940427,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.9876113624634284,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.7943166863344198,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.2907555694639774,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.2112698848219647,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.673751307209419,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.186279310548331,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.389141887621456,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.300638441741117,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.2816587897281879,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.2829882009822766,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.6600216129500422,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0842427384312217,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.5946718452413116,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.49928167044098437,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.0481661010971575,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.6280232610209877,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.4789400129747425,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.6092030318595887,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.9800756408951887,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0306882784502087,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.6688228431891208,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.525459022245215,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.7025426353026507,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.001084985719527,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.520709875872365,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.2679509585001667,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.9261996236334533,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.5991760345773638,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.04811345204437645,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.5985304495842563,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.7485154851009521,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.008485642543723,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.4305566429681689,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.7814929206309795,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.42532259927377813,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.994164089405507,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.7980109545078777,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.713853659523747,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.7495512586160142,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999993275575643,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.900358987310981,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.0334193397108002,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.5345962699552484,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9973356887189542,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.26759183378564,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.42256886813340966,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.76820991708338,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9910570018394995,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.007180744325339,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.17118623049511017,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.7179130957469511,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9998013832109844,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.6368752817459615,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.15649015283261836,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.8712153834829195,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.175143117714029,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.9672132834003815,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.3807692336764301,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.2296786527441688,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.175108773067635,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2957059777911253,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.848931847951283,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.240075002630862,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.972122240353392,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.695295737295655,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.6542931813160404,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.5045389992293012,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.1828353117755044,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.5044025741657943,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.9536502375351641,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.5145625910091631,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9910437540563726,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.0970171625020715,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.22218573023177335,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.738801223802618,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0190851308153035,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.8039940391780913,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.754286533278119,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.5489206871742196,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0014923601557366,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.883721047715208,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.047681961876127055,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.8307749638587094,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9987962224984717,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.3426355000202355,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.7872146305849181,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.25662719086242713,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.169201056953642,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.8156647838917226,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.5252571320480666,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.8119777831424795,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.1745473473494066,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.1043293312513347,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.6900227411671374,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.17823953945627835,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.8881148305276831,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.12025139618413849,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.37303024673269203,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.45040443425518895,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9981232939340503,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2655508992967492,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.5365823960363714,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.966832051568912,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0370582615416355,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.807643583290978,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.5341621137755621,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.1595877494470077,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0001215222709057,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.682443834699791,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.8917536605213883,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.32445568682710046,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.8061093239711448,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2471263924766207,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.5424273836895495,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.6658751598343093,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9445165774137851,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.814629386652033,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.0239786028188327,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.2142815707059755,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.662376172954981,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.367783929253194,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.506436113402902,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.987397194019796,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0805640568306183,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.48901081597437646,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.833430280978501,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.7294072071985287,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0389560318299527,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.32388228670358865,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.9789383098861655,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.21030870765517307,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0066425298855837,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.3042709702240565,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.32649269437504,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.2766061406478304,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9717142574775484,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.27325766825837183,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.45217043434356263,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.04450740693121702,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0312012339490964,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.0749228420652077,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.831684409934327,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.329612102245549,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.5691970769050174,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.5337803398139376,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.9495954982583221,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.601595087633939,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9997330370348951,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.6791335677969657,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.6081243634978886,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.939040822163329,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.4981141869739076,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.1477866966747485,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.2206509521601268,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.5445784003895451,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9998582011941037,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.8045262357497378,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.6353012058738177,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.8132038865980284,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.077263122962981,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.5477853413962284,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.08019344319332022,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.3843523725567444,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9678213666735143,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.8155237920203557,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.4687376367471483,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.7795079551513324,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0325823928388114,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.751426037956409,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.2505937079766216,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.875689524616322,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0313801953484019,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.896525812394394,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.443281430550853,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.3554735805108686,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.8257472866493454,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.5107702857928127,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.7122532845084821,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.2569518754443805,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.3090961443014857,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.16098212046055727,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.9818530389246405,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.0044163092453964,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.001436300264327,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.7211813583681064,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.3864683502323434,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.1844743202483656,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.6786198240638412,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.560708102556677,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.4081800471151116,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.2671101192370475,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0604984239069326,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.6424859589551777,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.42571569353553507,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.782288609616117,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.2499359497332896,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.7343406025986319,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5058024361484525,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.9857216975610075,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9932527499789292,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.7529289239237031,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.0178161460566215,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.497382137046686,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.1845025986263513,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.7884670325168615,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.1690698316832835,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.7395010466901173,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.2789877855831189,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.3737912455124319,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.7431784259081611,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.024567483643377,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000325122643474,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.1057242430275025,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.8479676800707563,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.753198944476326,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.136576843210589,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.21384175373699144,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.297076551381529,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.3375845189695754,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.139841066513235,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.0562484816479607,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.8960643396949255,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.1149535682515408,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.337346221984838,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.1059023315014649,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.1994126190153347,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.2477662689269071,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0078998701312107,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.9741482334262725,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.5912147861852857,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.2778945903354222,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.6516394824085765,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.3539768726439805,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.7525093931894773,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.091961687825967,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.93047611946552,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.976336258464579,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.4241576175047383,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.8126310044829435,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.8960378268594655,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.8837326265028675,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.2340502310556047,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.1974806656802295,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.7625504080164034,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.7395100454822003,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.9280965604499203,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.5051625862141096,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000862770445487,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.8253263340013133,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.22093949009736935,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.866642961517087,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9999392306671084,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.4693500984348207,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.5059211607216216,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.6112031991448763,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.002461308475076,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.8037437239491796,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.9322191582689054,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.0406595717758087,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.7169235485160976,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.0236353460555474,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.2749504570461978,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.431643722084822,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.6618593654920073,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.1253539458821411,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.8283007475582593,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.8174393244510412,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0032215430369464,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.1703219199651747,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.0304759932318603,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.055085319156161,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.6230766357038338,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.548074910632476,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.4386286487968807,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.122018996969611,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.3017346898483013,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.3830735116311486,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.4809401738324228,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.2121423825259683,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.2652859836889605,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.7003266872702567,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5114759137323235,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.6207512109215183,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9665609730717921,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.0480646266914135,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.4084379333664483,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.246244943157396,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.8346264329042934,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.33754391098512615,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.6975377087372547,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.9280384477171282,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0540814089057555,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.20198843469872374,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.8987938991513085,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.06004921082995818,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.8454849313656552,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.22856410490481505,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.24010233788070323,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.302020578333428,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9985391706045694,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.3150819904753694,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.517756692597314,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.4750502723524384,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.289096504884825,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.391538219943479,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.2079211110500756,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.4403460595167963,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.054385621766183,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.6831453928750344,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.6018678762252625,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.7289060322899488,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0878296286827764,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.5125376649333111,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.5503515468746256,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.4006044074999706,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.217967522862749,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.11317215248792678,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.9722017848399158,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.18142880873563882,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.777742612210258,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.4484929850751973,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.8481299864124807,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.8018755187726656,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9394042518338297,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.9898791184956384,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.4315382503923177,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.1461915515542715,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0946531690245287,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.4982393046484441,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.7933975244987497,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.0385130878148834,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.5856379795110054,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.368829951302923,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.6472358017310889,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.44083497861104,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.040788291234676,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.7140574209374053,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.213051799464393,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.3691190987910167,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9980824166164624,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2764811455840381,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.702760477066305,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.336098640464331,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.1711124751443864,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.8243626080797393,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5998922200684964,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.2777557525998775,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9405116297290352,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.3695170216836594,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.0921871438067976,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.8115942447631541,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.4114321691368443,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.07307409032497869,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.7602530859142513,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.7810173099309097,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.8726818491237067,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.2035758121352256,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.8107848547946772,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.241965670178602,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.1596055023316483,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.4482107725740807,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.7965916657499845,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.519088856829547,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9864794407745365,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.8483321249651485,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.2138342813025571,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.845273850966339,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.0756091048277057,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.1169436290440746,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.6901669294243309,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.6512871326582825,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.999452106963202,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.0531222002562304,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.12799534613382324,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.6841262506428958,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.8850247876606532,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.5854186338128295,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.10118443638508134,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.52766155886305,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9386145108121027,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.5783703382980754,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.084609485564048,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.7047209883499383,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9752568792291807,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.7497974510745387,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -1.81360255559227,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -2.949714783394609,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0000011642706546,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 2.752389972035674,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 0.373711485366909,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 1.2601155378497921,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.323728706381528,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.7840504417376215,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.566582715263854,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.651732385134379,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0148836165893496,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.2245924844239515,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5977367618478544,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.5614532958643652,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.000033645584984,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -2.4853586477980874,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.7666431030589185,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.41242065785698045,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.2303884312097795,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.10985407672086023,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -2.9850663795317063,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.19173122611687798,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.9990763132866767,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 1.9948753586366141,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.5835201771031437,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.9139482740324745,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.002411421847315,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.9197671878011011,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.680133366593811,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.19251844253769068,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 1.2033729039845436,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": 0.47437793091079516,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": -0.893057181974886,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 2.036063024493859,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.480906537129162,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -0.05851202853669024,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 2.5589932668229336,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": 0.5299874688693222,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.259859028454827,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.9074145107704583,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.9873512558562947,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -0.2182444233999279,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "fitness": 2.0389359849872575,
+            "neurons": [
+                {
+                    "id": 0,
+                    "type": "bias"
+                },
+                {
+                    "id": 1,
+                    "type": "input"
+                },
+                {
+                    "id": 2,
+                    "type": "input"
+                },
+                {
+                    "id": 3,
+                    "type": "output"
+                }
+            ],
+            "synapses": [
+                {
+                    "in": 0,
+                    "out": 3,
+                    "weight": -1.9992107321863066,
+                    "innov": 0,
+                    "enabled": true
+                },
+                {
+                    "in": 1,
+                    "out": 3,
+                    "weight": 1.3455682625850018,
+                    "innov": 1,
+                    "enabled": true
+                },
+                {
+                    "in": 2,
+                    "out": 3,
+                    "weight": -1.3073461583376287,
+                    "innov": 2,
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

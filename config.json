@@ -19,5 +19,8 @@
     "weight_mutate_power" : 0.5,
     "weight_max_value" : 3.0,
     "weight_min_value" : -3.0,
-    "inherit_average_weight" : false
+    "inherit_average_weight" : false,
+    "dynamic_delta_threshold" : false,
+    "target_species_count" : 20,
+    "dynamic_threshold_shift" : 0.1
 }

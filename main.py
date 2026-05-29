@@ -1,16 +1,22 @@
 import json
 from population import Population
-from phenotype import NeuralNetwork
 from evaluator import evaluate_population
 
 with open("config.json", "r") as file:
     config = json.load(file)
 
 if __name__ == "__main__":
+
+    # 1. Spawn a brand new Gen 0
     pop = Population(config)
-    print(f"Spawned Gen 0 with {len(pop.genomes)} brains.")
+    #pop = Population.load_json("xor_trained_backup.json", config)
     
-    evaluate_population(pop.genomes, config)
-        
-    best_genome = max(pop.genomes, key=lambda g: g.fitness)
-    print(f"Best Gen 0 Fitness: {best_genome.fitness:.3f} / 4.0")
+    print("Starting Evolution...")
+    
+    # 2. Run for up to 100 generations
+    winner = pop.run(evaluate_population, generations=100)
+    
+    print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 4.0")
+    
+    # 3. Save the resulting population so you don't lose the trained brains!
+    pop.save_json("xor_trained_backup.json")
