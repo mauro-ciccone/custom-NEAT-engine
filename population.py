@@ -5,12 +5,13 @@ import random
 class Species:
     def __init__(self, species_id: int, mascot: Genome):
         self.id = species_id
-        
         self.mascot = mascot
-        
         self.members: list[Genome] = [mascot]
-        
         self.fitness: float = 0.0
+
+        self.allowed_children: int = 0
+        self.max_fitness_ever: float = 0.0
+        self.generations_since_improvement: int = 0
 
 class Population:
     def __init__(self, config: dict) -> None:
@@ -92,7 +93,9 @@ class Population:
                 print("Solution found!")
                 return best_genome
                 
-            self.speciate() 
+            self.speciate()
+
+            self.calculate_offspring_amounts()
             
             # 4. MATING: Kill the weak, mutate the strong, spawn Gen N+1
             # self.reproduce()
@@ -107,8 +110,6 @@ class Population:
                 species.mascot = random.choice(species.members)
             
             species.members = []
-        
-        compatibility_threshold = self.config.get("compatibility_threshold", 3.0)
 
         for genome in self.genomes:
             found_species = False
@@ -141,3 +142,46 @@ class Population:
 
             if self.compatibility_threshold < 0.01:
                 self.compatibility_threshold = 0.01
+    
+    def calculate_offspring_amounts(self):
+        total_population_fitness = 0.0
+        dropoff_age = self.config.get("species_dropoff_age", 15)
+
+        global_best_fitness = max((g.fitness for g in self.genomes), default=0.0)
+
+        for species in self.species_list:
+            if len(species.members) > 0:
+                current_max = max(g.fitness for g in species.members)
+                if current_max > species.max_fitness_ever:
+                    species.max_fitness_ever = current_max
+                    species.generations_since_improvement = 0
+                else:
+                    species.generations_since_improvement += 1
+                
+                species.fitness = sum(g.fitness for g in species.members) / len(species.members)
+
+                if species.generations_since_improvement >= dropoff_age and current_max < global_best_fitness:
+                    species.fitness = 0.0
+
+            else:
+                species.fitness = 0.0
+                
+            total_population_fitness += species.fitness
+        
+        population_size = self.config.get("population_size", 150)
+        total_assigned = 0
+
+        for species in self.species_list:
+            if total_population_fitness > 0:
+                expected = (species.fitness / total_population_fitness) * population_size
+            else:
+                expected = population_size / len(self.species_list)
+            
+            species.allowed_children = int(expected)
+            total_assigned += species.allowed_children
+
+        leftovers = population_size - total_assigned
+        if leftovers > 0:
+            sorted_species = sorted(self.species_list, key=lambda s: s.fitness, reverse=True)
+            for i in range(leftovers):
+                sorted_species[i % len(sorted_species)].allowed_children += 1

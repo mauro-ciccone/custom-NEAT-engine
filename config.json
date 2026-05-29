@@ -22,5 +22,6 @@
     "inherit_average_weight" : false,
     "dynamic_delta_threshold" : false,
     "target_species_count" : 20,
-    "dynamic_threshold_shift" : 0.1
+    "dynamic_threshold_shift" : 0.1,
+    "species_dropoff_age": 15
 }
