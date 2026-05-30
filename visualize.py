@@ -78,4 +78,4 @@ if __name__ == "__main__":
     with open("config.json", "r") as file:
         config = json.load(file)
 
-    visualize_champion(f"{config['environment']}_trained_backup.json")
+    visualize_champion(f"{config['environment']}_training_backup.json")

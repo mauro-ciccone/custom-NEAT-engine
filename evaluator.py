@@ -58,9 +58,11 @@ class CarEvaluator:
         pass
         return 0.0
 
-def evaluate_population(genomes: list, config: dict, executor):
+# NEW: Top-level batch function so it can be cleanly pickled to workers
+def evaluate_genomes_batch(genomes_chunk: list, config: dict) -> list[float]:
+    # We initialize the evaluator inside the worker process!
+    # This completely eliminates the overhead/crashes of pickling evaluator state.
     environment = config["environment"]
-    
     if environment == "xor":
         evaluator = XOREvaluator(config)
     elif environment == "car":
@@ -70,7 +72,28 @@ def evaluate_population(genomes: list, config: dict, executor):
     else:
         raise ValueError(f"Unknown environment in config: {environment}")
         
-    results = list(executor.map(evaluator.evaluate_genome, genomes))
+    results = []
+    for genome in genomes_chunk:
+        results.append(evaluator.evaluate_genome(genome))
+        
+    return results
+
+def evaluate_population(genomes: list, config: dict, executor):
+    # Determine chunk size so each worker gets exactly one thick batch
+    num_workers = getattr(executor, '_max_workers', 10) 
+    chunk_size = max(1, len(genomes) // num_workers)
     
+    # Slice the population into chunks
+    chunks = [genomes[i:i + chunk_size] for i in range(0, len(genomes), chunk_size)]
+    
+    # Submit batches instead of individual genomes
+    futures = [executor.submit(evaluate_genomes_batch, chunk, config) for chunk in chunks]
+    
+    # Collect results chronologically
+    results = []
+    for future in futures:
+        results.extend(future.result())
+    
+    # Map fitness back to genomes
     for genome, calculated_fitness in zip(genomes, results):
         genome.fitness = calculated_fitness
