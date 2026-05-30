@@ -1,6 +1,6 @@
 {
     "environment": "circle",
-    "population_size": 200,
+    "population_size": 400,
     "c1": 1.0,
     "c2": 1.0,
     "c3": 0.4,
@@ -12,7 +12,7 @@
     "interspecies_mating_rate" : 0.001,
     "new_node_mutation_prob": 0.03,
     "new_link_mutation_prob": 0.05,
-    "activation_function" : "sigmoid",
+    "activation_function" : "weak_sigmoid",
     "input_counts" : 2,
     "output_counts" : 1,
     "weight_mutate_power" : 0.3,
@@ -22,10 +22,11 @@
     "weight_init_min" : -1.0,
     "inherit_average_weight" : false,
     "dynamic_delta_threshold" : true,
-    "target_species_count" : 35,
-    "dynamic_threshold_shift" : 0.3,
-    "species_dropoff_age" : 30,
-    "small_genome_N" : 15,
+    "target_species_count" : 40,
+    "dynamic_threshold_shift" : 0.2,
+    "species_dropoff_age" : 40,
+    "small_genome_N" : 20,
     "species_champion_minsize" : 5,
-    "premature_cutoff" : 99
+    "premature_cutoff" : 99,
+    "ignore_N" : true
 }

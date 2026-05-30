@@ -24,7 +24,8 @@ class NeuralNetwork:
         self.output_nodes: list[Node] = []
 
         self.activation_functions = {
-            "sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x*4.9, 100), -100))), # Clamped to prevent math overflow errors
+            "steep_sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x*4.9, 100), -100))), # Clamped to prevent math overflow errors
+            "weak_sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x, 100), -100))),
             "tanh": math.tanh,
             "relu": lambda x: max(0.0, x),
             "binary": lambda x: 1.0 if x > 0.5 else 0.0

@@ -240,6 +240,9 @@ class Genome:
         
         if N < config["small_genome_N"]:
             N = 1
+        
+        if config["ignore_N"]:
+            N = 1
 
         W = (weight_diff_sum / matching) if matching > 0 else 0.0
 
