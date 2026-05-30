@@ -17,7 +17,7 @@ if __name__ == "__main__":
     print("Starting Evolution...")
     
     try:
-        winner = pop.run(evaluate_population, generations=100)
+        winner = pop.run(evaluate_population, generations=10000)
         print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 4.0")
         
     except KeyboardInterrupt:
