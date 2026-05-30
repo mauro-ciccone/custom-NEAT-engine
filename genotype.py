@@ -209,9 +209,8 @@ class Genome:
 
     def distance_to(self, other_genome: 'Genome', config: dict) -> float:
         
-        synapses1 = sorted(self.synapses, key=lambda x: x.innovation_id)
-        synapses2 = sorted(other_genome.synapses, key=lambda x: x.innovation_id)
-
+        synapses1 = self.synapses
+        synapses2 = other_genome.synapses
         i = 0
         j = 0
 

@@ -251,6 +251,8 @@ class Population:
                         self.synapses_history, self.global_synapse_counter, self.config
                     )
                 
+                child.synapses.sort(key=lambda x: x.innovation_id)
+                
                 next_generation.append(child)
                 children_spawned += 1
         
