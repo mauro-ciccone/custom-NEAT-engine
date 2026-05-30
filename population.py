@@ -22,6 +22,8 @@ class Population:
         self.global_neuron_counter = 0
         self.global_synapse_counter = 0
 
+        self.current_generation = 0
+
         self.species_list: list[Species] = []
         self.global_species_counter = 0
 
@@ -44,6 +46,7 @@ class Population:
     
     def save_json(self, filepath: str):
         save_data = {
+            "current_generation": self.current_generation,
             "global_neuron_counter": self.global_neuron_counter,
             "global_synapse_counter": self.global_synapse_counter,
             
@@ -67,6 +70,8 @@ class Population:
         pop.global_neuron_counter = data["global_neuron_counter"]
         pop.global_synapse_counter = data["global_synapse_counter"]
 
+        pop.current_generation = data["current_generation"]
+
         pop.compatibility_threshold = data["compatibility_threshold"]
 
         pop.species_list = []
@@ -87,10 +92,28 @@ class Population:
         return pop
     
     def run(self, evaluator_function, generations: int):
-        for generation in range(generations):
+
+        start_gen = self.current_generation
+        end_gen = start_gen + generations
+
+        for generation in range(start_gen, end_gen):
+
+            self.current_generation = generation
+
             evaluator_function(self.genomes, self.config)
             best_genome = max(self.genomes, key=lambda g: g.fitness)
-            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 4.0")
+
+            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 20.0")
+
+            if generation % 10 == 0 or generation == 0:
+                print(f"\n" + "="*40)
+                print(f" 📊 GENERATION {generation} OVERVIEW")
+                print("="*40)
+                print(f" 🏆 Best Score : {best_genome.fitness:.3f}")
+                print(f" 🧬 Species    : {len(self.species_list)} (Target: {self.config['target_species_count']})")
+                print(f" 🎚️ Threshold  : {self.compatibility_threshold:.3f}")
+                print(f" 🧠 Topo Size  : {self.global_neuron_counter} Nodes | {self.global_synapse_counter} Genes")
+                print("="*40 + "\n")
     
             if best_genome.fitness >= self.config["premature_cutoff"]:
                 print("Solution found!")
