@@ -87,7 +87,7 @@ class Population:
         for generation in range(generations):
             evaluator_function(self.genomes, self.config)
             best_genome = max(self.genomes, key=lambda g: g.fitness)
-            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 4.0")
+            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.5f} / 4.0")
     
             if best_genome.fitness >= self.config["premature_cutoff"]:
                 print("Solution found!")
