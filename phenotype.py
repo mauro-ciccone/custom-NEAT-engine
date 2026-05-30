@@ -14,6 +14,7 @@ class NeuralNetwork:
             "steep_sigmoid": fast_steep_sigmoid,
             "weak_sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x, 100), -100))),
             "tanh": math.tanh,
+            "weak_tanh": lambda x: math.tanh(x * 0.5),
             "relu": lambda x: max(0.0, x),
             "binary": lambda x: 1.0 if x > 0.5 else 0.0
         }

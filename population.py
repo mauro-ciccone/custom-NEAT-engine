@@ -95,25 +95,30 @@ class Population:
 
         start_gen = self.current_generation
         end_gen = start_gen + generations
+        current_best = 0
 
         for generation in range(start_gen, end_gen):
 
             self.current_generation = generation
 
-            evaluator_function(self.genomes, self.config)
+            evaluator_function(self.genomes, self.config, self.current_generation)
             best_genome = max(self.genomes, key=lambda g: g.fitness)
 
-            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 100.0")
+            current_best = max(current_best, best_genome.fitness)
+
+            
 
             if generation % self.config["extensive_log_per_gen"] == 0 or generation == 0:
-                print(f"\n" + "="*40)
-                print(f" 📊 GENERATION {generation} OVERVIEW")
                 print("="*40)
-                print(f" 🏆 Best Score : {best_genome.fitness:.3f}")
+                print(f" 📊 GENERATION {generation} OVERVIEW")
+                print(f" 🏆 Best Score : {current_best:.3f}")
+                print(f" 🥇 Current Score : {best_genome.fitness:.3f}")
                 print(f" 🧬 Species    : {len(self.species_list)} (Target: {self.config['target_species_count']})")
                 print(f" 🎚️ Threshold  : {self.compatibility_threshold:.3f}")
-                print(f" 🧠 Topo Size  : {self.global_neuron_counter} Nodes | {self.global_synapse_counter} Genes")
-                print("="*40 + "\n")
+                print(f" 🧠 Topo Size  : {len(best_genome.neuron_ids)} Nodes | {len(best_genome.synapses)} Genes")
+                print("="*40)
+            else:
+                print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 10000.0")
     
             if best_genome.fitness >= self.config["premature_cutoff"]:
                 print("Solution found!")
