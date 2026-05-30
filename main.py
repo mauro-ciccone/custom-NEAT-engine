@@ -24,7 +24,7 @@ if __name__ == "__main__":
     print("Starting Evolution...")
     
     try:
-        winner = pop.run(lambda genomes, config: evaluate_population(genomes, config, executor), generations=200)
+        winner = pop.run(lambda genomes, config: evaluate_population(genomes, config, executor), generations=201)
         print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 100.0")
         
     except KeyboardInterrupt:

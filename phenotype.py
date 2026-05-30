@@ -23,8 +23,14 @@ class NeuralNetwork:
         self.input_nodes: list[Node] = []
         self.output_nodes: list[Node] = []
 
+        def fast_steep_sigmoid(x):
+            try:
+                return 1.0 / (1.0 + math.exp(-x * 4.9))
+            except OverflowError:
+                return 0.0 if x < 0 else 1.0
+
         self.activation_functions = {
-            "steep_sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x*4.9, 100), -100))), # Clamped to prevent math overflow errors
+            "steep_sigmoid": lambda x: fast_steep_sigmoid(x),
             "weak_sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x, 100), -100))),
             "tanh": math.tanh,
             "relu": lambda x: max(0.0, x),
@@ -65,3 +71,9 @@ class NeuralNetwork:
                 node.next_value = 0
         
         return [node.current_value for node in self.output_nodes]
+    
+    def reset(self):
+        for node in self.nodes.values():
+            if node.type in (NeuronType.HIDDEN, NeuronType.OUTPUT):
+                node.current_value = 0.0
+                node.next_value = 0.0

@@ -41,6 +41,7 @@ class CircleEvaluator:
         fitness = 100.0 
 
         for inputs, expected in self.test_cases:
+            network.reset
             for _ in range(4):
                 network.feed_forward(inputs)
             output = network.feed_forward(inputs)[0]
