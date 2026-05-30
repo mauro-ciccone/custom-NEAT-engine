@@ -7,13 +7,25 @@ with open("config.json", "r") as file:
 
 if __name__ == "__main__":
 
-    #pop = Population(config)
-    pop = Population.load_json("xor_trained_backup.json", config)
+    load_backup = False
+
+    if not load_backup:
+        pop = Population(config)
+    else: 
+        pop = Population.load_json("xor_trained_backup.json", config)
     
     print("Starting Evolution...")
     
-    winner = pop.run(evaluate_population, generations=100)
-    
-    print(f"\nTraining Complete! Best Fitness: {winner.fitness:.5f} / 4.0")
-    
+    try:
+        winner = pop.run(evaluate_population, generations=100)
+        print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 4.0")
+        
+    except KeyboardInterrupt:
+        print("\n\nTraining Interrupted by User!")
+        print("Grabbing the best genome so far...")
+        winner = max(pop.genomes, key=lambda g: g.fitness)
+        print(f"Current Best Fitness: {winner.fitness:.3f} / 4.0")
+        
+    print("Saving population state to disk...")
     pop.save_json("xor_trained_backup.json")
+    print("Safely exited.")

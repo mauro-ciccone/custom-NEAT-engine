@@ -25,5 +25,5 @@
     "species_dropoff_age" : 15,
     "small_genome_N" : 20,
     "species_champion_minsize" : 5,
-    "premature_cutoff" : 3.9999
+    "premature_cutoff" : 3.99
 }
