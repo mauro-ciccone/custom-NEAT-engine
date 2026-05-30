@@ -103,7 +103,7 @@ class Population:
             evaluator_function(self.genomes, self.config)
             best_genome = max(self.genomes, key=lambda g: g.fitness)
 
-            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 20.0")
+            print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 100.0")
 
             if generation % 10 == 0 or generation == 0:
                 print(f"\n" + "="*40)

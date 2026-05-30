@@ -60,7 +60,7 @@ class Genome:
         
         for startnode in self.inputs_and_bias:
             for output in self.outputs:
-                initial_weight = random.uniform(config["weight_min_value"], config["weight_max_value"])
+                initial_weight = random.uniform(config["weight_init_min"], config["weight_init_max"])
                 self.synapses.append(Synapse(startnode, output, initial_weight, innovation_counter))
                 innovation_counter += 1
     
@@ -193,7 +193,7 @@ class Genome:
             synapses_history[new_pair] = innov_num
             global_synapse_counter += 1
         
-        initial_weight = random.uniform(config["weight_min_value"], config["weight_max_value"])
+        initial_weight = random.uniform(config["weight_init_min"], config["weight_init_max"])
 
         new_synapse = Synapse(in_node, out_node, initial_weight, innov_num)
         self.synapses.append(new_synapse)
