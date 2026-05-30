@@ -105,7 +105,7 @@ class Population:
 
             print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 100.0")
 
-            if generation % 10 == 0 or generation == 0:
+            if generation % self.config["extensive_log_per_gen"] == 0 or generation == 0:
                 print(f"\n" + "="*40)
                 print(f" 📊 GENERATION {generation} OVERVIEW")
                 print("="*40)

@@ -28,5 +28,6 @@
     "small_genome_N" : 20,
     "species_champion_minsize" : 5,
     "premature_cutoff" : 99,
-    "ignore_N" : true
+    "ignore_N" : true,
+    "extensive_log_per_gen" : 100
 }
