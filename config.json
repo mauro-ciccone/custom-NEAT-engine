@@ -6,7 +6,6 @@
     "c3": 0.4,
     "compatibility_threshold": 3.0,
     "genome_mutate_weights_prob" : 0.8,
-    "mutate_weight_perturbe_prob" : 0.9,
     "mutate_weight_replace_prob" : 0.1,
     "disable_inherited_gene_prob" : 0.75,
     "offspring_from_mutation_percent" : 0.25,

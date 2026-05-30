@@ -31,7 +31,7 @@ class CarEvaluator:
         pass
 
 def evaluate_population(genomes: list, config: dict):
-    environment = config.get("environment", "no environment in config")
+    environment = config["environment"]
     
     if environment == "xor":
         evaluator = XOREvaluator(config)
