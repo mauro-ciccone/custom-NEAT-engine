@@ -15,5 +15,5 @@ Thumbs.db
 
 # Backup Json
 
-xor_trained_backup.json
-circle_trained_backup.json
+xor_training_backup.json
+circle_training_backup.json

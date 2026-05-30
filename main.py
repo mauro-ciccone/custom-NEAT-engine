@@ -19,7 +19,7 @@ if __name__ == "__main__":
     if not load_backup:
         pop = Population(config)
     else: 
-        pop = Population.load_json(f"{config['environment']}_trained_backup.json", config)
+        pop = Population.load_json(f"{config['environment']}_training_backup.json", config)
     
     print("Starting Evolution...")
     
@@ -34,5 +34,5 @@ if __name__ == "__main__":
         print(f"Current Best Fitness: {winner.fitness:.3f} / 100.0")
         
     print("Saving population state to disk...")
-    pop.save_json(f"{config['environment']}_trained_backup.json")
+    pop.save_json(f"{config['environment']}_training_backup.json")
     print("Safely exited.")
