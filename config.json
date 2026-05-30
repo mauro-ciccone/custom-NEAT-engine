@@ -1,6 +1,6 @@
 {
     "environment": "circle",
-    "population_size": 150,
+    "population_size": 500,
     "c1": 1.0,
     "c2": 1.0,
     "c3": 0.4,
@@ -20,10 +20,10 @@
     "weight_min_value" : -10.0,
     "inherit_average_weight" : false,
     "dynamic_delta_threshold" : true,
-    "target_species_count" : 15,
-    "dynamic_threshold_shift" : 0.2,
-    "species_dropoff_age" : 15,
-    "small_genome_N" : 20,
+    "target_species_count" : 35,
+    "dynamic_threshold_shift" : 0.3,
+    "species_dropoff_age" : 30,
+    "small_genome_N" : 15,
     "species_champion_minsize" : 5,
     "premature_cutoff" : 99
 }

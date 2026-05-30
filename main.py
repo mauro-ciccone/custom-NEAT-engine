@@ -2,15 +2,19 @@ import json
 from population import Population
 from evaluator import evaluate_population
 import concurrent.futures
+import signal
 
 with open("config.json", "r") as file:
     config = json.load(file)
+
+def init_worker():
+        signal.signal(signal.SIGINT, signal.SIG_IGN)
 
 if __name__ == "__main__":
 
     load_backup = False
 
-    executor = concurrent.futures.ProcessPoolExecutor()
+    executor = concurrent.futures.ProcessPoolExecutor(initializer=init_worker)
 
     if not load_backup:
         pop = Population(config)
@@ -20,7 +24,7 @@ if __name__ == "__main__":
     print("Starting Evolution...")
     
     try:
-        winner = pop.run(lambda genomes, config: evaluate_population(genomes, config, executor), generations=100)
+        winner = pop.run(lambda genomes, config: evaluate_population(genomes, config, executor), generations=300)
         print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 100.0")
         
     except KeyboardInterrupt:
