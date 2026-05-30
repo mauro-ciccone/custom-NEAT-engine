@@ -89,7 +89,7 @@ class Population:
             best_genome = max(self.genomes, key=lambda g: g.fitness)
             print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 4.0")
     
-            if best_genome.fitness >= 3.999999:
+            if best_genome.fitness >= 3.99:
                 print("Solution found!")
                 return best_genome
                 
