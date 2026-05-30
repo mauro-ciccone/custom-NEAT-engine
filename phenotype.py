@@ -35,12 +35,12 @@ class NeuralNetwork:
         self.input_indices = [self.node_id_to_idx[n_id] for n_id in genome.inputs]
         self.output_indices = [self.node_id_to_idx[n_id] for n_id in genome.outputs]
 
-        for node_id, physical_node in genome.neurons.items():
+        for node_id, neuron in genome.neurons.items():
             idx = self.node_id_to_idx[node_id]
             
-            if physical_node.type == NeuronType.BIAS:
+            if neuron.type == NeuronType.BIAS:
                 self.current_values[idx] = 1.0 
-            elif physical_node.type in (NeuronType.HIDDEN, NeuronType.OUTPUT):
+            elif neuron.type in (NeuronType.HIDDEN, NeuronType.OUTPUT):
                 self.activation_indices.append(idx)
         
         # Map synapses to index-based connections

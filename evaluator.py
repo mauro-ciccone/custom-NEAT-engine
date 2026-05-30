@@ -14,7 +14,7 @@ class XOREvaluator:
         fitness = 4.0 
 
         for i in range(4):
-
+                network.reset()
                 for _ in range(20):
                     network.feed_forward(self.inputs[i])
                 
@@ -41,7 +41,7 @@ class CircleEvaluator:
         fitness = 100.0 
 
         for inputs, expected in self.test_cases:
-            network.reset
+            network.reset()
             for _ in range(4):
                 network.feed_forward(inputs)
             output = network.feed_forward(inputs)[0]
