@@ -2,7 +2,7 @@ import json
 import networkx as nx
 import matplotlib.pyplot as plt
 
-def visualize_champion(filepath="xor_trained_backup.json"):
+def visualize_champion(filepath):
     # 1. Load the frozen data
     with open(filepath, "r") as f:
         data = json.load(f)
@@ -75,4 +75,7 @@ def visualize_champion(filepath="xor_trained_backup.json"):
     plt.show()
 
 if __name__ == "__main__":
-    visualize_champion()
+    with open("config.json", "r") as file:
+        config = json.load(file)
+
+    visualize_champion(f"{config['environment']}_trained_backup.json")
