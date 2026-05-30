@@ -1,13 +1,16 @@
 import json
 from population import Population
 from evaluator import evaluate_population
+import concurrent.futures
 
 with open("config.json", "r") as file:
     config = json.load(file)
 
 if __name__ == "__main__":
 
-    load_backup = True
+    load_backup = False
+
+    executor = concurrent.futures.ProcessPoolExecutor()
 
     if not load_backup:
         pop = Population(config)
@@ -17,14 +20,14 @@ if __name__ == "__main__":
     print("Starting Evolution...")
     
     try:
-        winner = pop.run(evaluate_population, generations=100)
-        print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 4.0")
+        winner = pop.run(lambda genomes, config: evaluate_population(genomes, config, executor), generations=100)
+        print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 100.0")
         
     except KeyboardInterrupt:
         print("\n\nTraining Interrupted by User!")
         print("Grabbing the best genome so far...")
         winner = max(pop.genomes, key=lambda g: g.fitness)
-        print(f"Current Best Fitness: {winner.fitness:.3f} / 4.0")
+        print(f"Current Best Fitness: {winner.fitness:.3f} / 100.0")
         
     print("Saving population state to disk...")
     pop.save_json(f"{config['environment']}_trained_backup.json")

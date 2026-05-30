@@ -41,7 +41,7 @@ class CircleEvaluator:
         fitness = 100.0 
 
         for inputs, expected in self.test_cases:
-            for _ in range(20):
+            for _ in range(4):
                 network.feed_forward(inputs)
             output = network.feed_forward(inputs)[0]
             fitness -= abs(expected - output)
@@ -57,7 +57,7 @@ class CarEvaluator:
         pass
         return 0.0
 
-def evaluate_population(genomes: list, config: dict):
+def evaluate_population(genomes: list, config: dict, executor):
     environment = config["environment"]
     
     if environment == "xor":
@@ -69,8 +69,7 @@ def evaluate_population(genomes: list, config: dict):
     else:
         raise ValueError(f"Unknown environment in config: {environment}")
         
-    with concurrent.futures.ProcessPoolExecutor() as executor:
-        results = list(executor.map(evaluator.evaluate_genome, genomes))
+    results = list(executor.map(evaluator.evaluate_genome, genomes))
     
     for genome, calculated_fitness in zip(genomes, results):
         genome.fitness = calculated_fitness
