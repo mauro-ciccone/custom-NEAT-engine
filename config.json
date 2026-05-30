@@ -5,6 +5,7 @@
     "c2": 1.0,
     "c3": 0.4,
     "compatibility_threshold": 3.0,
+    "mate_best_percent" : 0.6,
     "genome_mutate_weights_prob" : 0.8,
     "mutate_weight_replace_prob" : 0.05,
     "disable_inherited_gene_prob" : 0.75,

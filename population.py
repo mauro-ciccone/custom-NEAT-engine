@@ -217,6 +217,8 @@ class Population:
                 continue
 
             members_sorted = sorted(species.members, key=lambda g: g.fitness, reverse=True)
+            survivor_threshold = max(1, int(len(members_sorted))*self.config["mate_best_percent"])
+            survivors = members_sorted[:survivor_threshold]
             children_spawned = 0
 
             if species.allowed_children >= self.config["species_champion_minsize"]:
@@ -226,15 +228,15 @@ class Population:
             
             while children_spawned < species.allowed_children:
                 if random.random() < self.config["offspring_from_mutation_percent"]:
-                    parent1 = random.choice(members_sorted)
+                    parent1 = random.choice(survivors)
                     child = parent1.clone()
                 else:
-                    parent1 = random.choice(members_sorted)
+                    parent1 = random.choice(survivors)
                     if random.random() < self.config["interspecies_mating_rate"] and len(self.species_list) > 1:
                         random_species = random.choice([s for s in self.species_list if s.id != species.id])
                         parent2 = random.choice(random_species.members)
                     else:
-                        parent2 = random.choice(members_sorted)
+                        parent2 = random.choice(survivors)
                     child = Genome.crossover(parent1, parent2, self.config)
                 
                 if random.random() < self.config["genome_mutate_weights_prob"]:

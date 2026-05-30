@@ -1,6 +1,5 @@
 from phenotype import NeuralNetwork
-import random
-import concurrent.futures
+import math
 
 class XOREvaluator:
     def __init__(self, config: dict) -> None:
@@ -15,7 +14,7 @@ class XOREvaluator:
 
         for i in range(4):
                 network.reset()
-                for _ in range(20):
+                for _ in range(5):
                     network.feed_forward(self.inputs[i])
                 
                 output = network.feed_forward(self.inputs[i])[0]
@@ -42,7 +41,7 @@ class CircleEvaluator:
 
         for inputs, expected in self.test_cases:
             network.reset()
-            for _ in range(4):
+            for _ in range(5):
                 network.feed_forward(inputs)
             output = network.feed_forward(inputs)[0]
             fitness -= abs(expected - output)
@@ -81,7 +80,7 @@ def evaluate_genomes_batch(genomes_chunk: list, config: dict) -> list[float]:
 def evaluate_population(genomes: list, config: dict, executor):
     # Determine chunk size so each worker gets exactly one thick batch
     num_workers = getattr(executor, '_max_workers', 10) 
-    chunk_size = max(1, len(genomes) // num_workers)
+    chunk_size = max(1, math.ceil(len(genomes) // num_workers))
     
     # Slice the population into chunks
     chunks = [genomes[i:i + chunk_size] for i in range(0, len(genomes), chunk_size)]
