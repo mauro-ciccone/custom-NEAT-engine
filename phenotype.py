@@ -26,7 +26,8 @@ class NeuralNetwork:
         self.activation_functions = {
             "sigmoid": lambda x: 1.0 / (1.0 + math.exp(max(min(-x*4.9, 100), -100))), # Clamped to prevent math overflow errors
             "tanh": math.tanh,
-            "relu": lambda x: max(0.0, x)
+            "relu": lambda x: max(0.0, x),
+            "binary": lambda x: 1.0 if x > 0.5 else 0.0
         }
 
         self.activation_function = self.activation_functions[config["activation_function"]]
