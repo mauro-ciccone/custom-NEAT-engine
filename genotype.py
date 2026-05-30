@@ -332,3 +332,24 @@ class Genome:
             i += 1
         
         return child
+    
+    def clone(self) -> 'Genome':
+            new_genome = Genome.__new__(Genome)
+            new_genome.fitness = self.fitness
+        
+            # Fast copy neurons
+            new_genome.neurons = {n_id: Neuron(n_id, n.type) for n_id, n in self.neurons.items()}
+            new_genome.neuron_ids = list(self.neuron_ids)
+            new_genome.inputs = list(self.inputs)
+            new_genome.outputs = list(self.outputs)
+            new_genome.inputs_and_bias = list(self.inputs_and_bias)
+            new_genome.hidden = list(self.hidden)
+        
+            # Fast copy synapses
+            new_genome.synapses = []
+            for s in self.synapses:
+                new_syn = Synapse(s.in_node_id, s.out_node_id, s.weight, s.innovation_id)
+                new_syn.is_enabled = s.is_enabled
+                new_genome.synapses.append(new_syn)
+            
+            return new_genome

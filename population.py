@@ -211,9 +211,6 @@ class Population:
 
     def reproduce(self):
         next_generation = []
-
-        def clone_genome(g: Genome) -> Genome:
-            return Genome.from_dict(g.to_dict())
         
         for species in self.species_list:
             if species.allowed_children <= 0:
@@ -223,14 +220,14 @@ class Population:
             children_spawned = 0
 
             if species.allowed_children >= self.config["species_champion_minsize"]:
-                champion_clone = clone_genome(members_sorted[0])
+                champion_clone = members_sorted[0].clone()
                 next_generation.append(champion_clone)
                 children_spawned += 1
             
             while children_spawned < species.allowed_children:
                 if random.random() < self.config["offspring_from_mutation_percent"]:
                     parent1 = random.choice(members_sorted)
-                    child = clone_genome(parent1)
+                    child = parent1.clone()
                 else:
                     parent1 = random.choice(members_sorted)
                     if random.random() < self.config["interspecies_mating_rate"] and len(self.species_list) > 1:
