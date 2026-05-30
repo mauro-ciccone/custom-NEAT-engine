@@ -68,6 +68,9 @@ class Population:
         pop.global_synapse_counter = data["global_synapse_counter"]
 
         pop.compatibility_threshold = data["compatibility_threshold"]
+
+        pop.species_list = []
+        pop.global_species_counter = 0
         
         pop.synapses_history = {
             (int(k.split(",")[0]), int(k.split(",")[1])): int(v)
