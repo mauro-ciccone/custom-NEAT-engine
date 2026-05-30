@@ -24,5 +24,6 @@
     "dynamic_threshold_shift" : 0.1,
     "species_dropoff_age" : 15,
     "small_genome_N" : 20,
-    "species_champion_minsize" : 5
+    "species_champion_minsize" : 5,
+    "premature_cutoff" : 3.99
 }
