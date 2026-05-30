@@ -217,7 +217,7 @@ class Population:
                 continue
 
             members_sorted = sorted(species.members, key=lambda g: g.fitness, reverse=True)
-            survivor_threshold = max(1, int(len(members_sorted))*self.config["mate_best_percent"])
+            survivor_threshold = max(1, int(len(members_sorted)*self.config["mate_best_percent"]))
             survivors = members_sorted[:survivor_threshold]
             children_spawned = 0
 
