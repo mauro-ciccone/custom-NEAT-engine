@@ -25,7 +25,7 @@ class Population:
         self.species_list: list[Species] = []
         self.global_species_counter = 0
 
-        self.compatibility_threshold = config.get("compatibility_threshold", 3.0)
+        self.compatibility_threshold = config["compatibility_threshold"]
 
         input_count = config["input_counts"]
         output_count = config["output_counts"]
@@ -67,7 +67,7 @@ class Population:
         pop.global_neuron_counter = data["global_neuron_counter"]
         pop.global_synapse_counter = data["global_synapse_counter"]
 
-        pop.compatibility_threshold = data.get("compatibility_threshold", config.get("compatibility_threshold", 3.0))
+        pop.compatibility_threshold = data["compatibility_threshold"]
         
         pop.synapses_history = {
             (int(k.split(",")[0]), int(k.split(",")[1])): int(v)
@@ -79,7 +79,7 @@ class Population:
             for k, v in data["hidden_neurons_history"].items()
         }
         
-        pop.genomes = [Genome.from_dict(g_data, config) for g_data in data["genomes"]]
+        pop.genomes = [Genome.from_dict(g_data) for g_data in data["genomes"]]
         
         return pop
     
@@ -97,14 +97,11 @@ class Population:
 
             self.calculate_offspring_amounts()
             
-            # 4. MATING: Kill the weak, mutate the strong, spawn Gen N+1
-            # self.reproduce()
+            self.reproduce()
             
-        # Return the best genome we found after all generations
         return max(self.genomes, key=lambda g: g.fitness)
     
     def speciate(self):
-
         for species in self.species_list:
             if species.members:
                 species.mascot = random.choice(species.members)
@@ -129,9 +126,9 @@ class Population:
         
         self.species_list = [s for s in self.species_list if len(s.members) > 0]
 
-        if self.config.get("dynamic_delta_threshold", False):
-            target_species_count = self.config.get("target_species_count", 10)
-            dynamic_threshold_shift = self.config.get("dynamic_threshold_shift", 0.1)
+        if self.config["dynamic_delta_threshold"]:
+            target_species_count = self.config["target_species_count"]
+            dynamic_threshold_shift = self.config["dynamic_threshold_shift"]
 
             num_species = len(self.species_list)
 
@@ -145,7 +142,7 @@ class Population:
     
     def calculate_offspring_amounts(self):
         total_population_fitness = 0.0
-        dropoff_age = self.config.get("species_dropoff_age", 15)
+        dropoff_age = self.config["species_dropoff_age"]
 
         global_best_fitness = max((g.fitness for g in self.genomes), default=0.0)
 
@@ -168,7 +165,7 @@ class Population:
                 
             total_population_fitness += species.fitness
         
-        population_size = self.config.get("population_size", 150)
+        population_size = self.config["population_size"]
         total_assigned = 0
 
         for species in self.species_list:
@@ -185,3 +182,53 @@ class Population:
             sorted_species = sorted(self.species_list, key=lambda s: s.fitness, reverse=True)
             for i in range(leftovers):
                 sorted_species[i % len(sorted_species)].allowed_children += 1
+
+    def reproduce(self):
+        next_generation = []
+
+        def clone_genome(g: Genome) -> Genome:
+            return Genome.from_dict(g.to_dict())
+        
+        for species in self.species_list:
+            if species.allowed_children <= 0:
+                continue
+
+            members_sorted = sorted(species.members, key=lambda g: g.fitness, reverse=True)
+            children_spawned = 0
+
+            if species.allowed_children >= self.config["species_champion_minsize"]:
+                champion_clone = clone_genome(members_sorted[0])
+                next_generation.append(champion_clone)
+                children_spawned += 1
+            
+            while children_spawned < species.allowed_children:
+                if random.random() < self.config["offspring_from_mutation_percent"]:
+                    parent1 = random.choice(members_sorted)
+                    child = clone_genome(parent1)
+                else:
+                    parent1 = random.choice(members_sorted)
+                    if random.random() < self.config["interspecies_mating_rate"] and len(self.species_list) > 1:
+                        random_species = random.choice([s for s in self.species_list if s.id != species.id])
+                        parent2 = random.choice(random_species.members)
+                    else:
+                        parent2 = random.choice(members_sorted)
+                    child = Genome.crossover(parent1, parent2, self.config)
+                
+                if random.random() < self.config["genome_mutate_weights_prob"]:
+                    child.mutate_weights(self.config)
+                
+                if random.random() < self.config["new_node_mutation_prob"]:
+                    self.global_neuron_counter, self.global_synapse_counter = child.mutate_add_neuron(
+                        self.hidden_neurons_history, self.synapses_history, 
+                        self.global_neuron_counter, self.global_synapse_counter
+                    )
+
+                if random.random() < self.config["new_link_mutation_prob"]:
+                    self.global_synapse_counter = child.mutate_add_synapse(
+                        self.synapses_history, self.global_synapse_counter, self.config
+                    )
+                
+                next_generation.append(child)
+                children_spawned += 1
+        
+        self.genomes = next_generation

@@ -29,7 +29,7 @@ class NeuralNetwork:
             "relu": lambda x: max(0.0, x)
         }
 
-        self.activation_function = self.activation_functions.get(config["activation_function"], self.activation_functions.get("sigmoid", math.tanh))
+        self.activation_function = self.activation_functions[config["activation_function"]]
 
         for node_id, neuron_gene in genome.neurons.items():
             physical_node = Node(node_id, neuron_gene.type)

@@ -80,7 +80,7 @@ class Genome:
         }
     
     @classmethod
-    def from_dict(cls, data: dict, config: dict) -> 'Genome':
+    def from_dict(cls, data: dict) -> 'Genome':
         genome = cls.__new__(cls)
         genome.fitness = data["fitness"]
         
@@ -239,15 +239,96 @@ class Genome:
 
         N = max(len(synapses1), len(synapses2))
         
-        if N < 20:
+        if N < config["small_genome_N"]:
             N = 1
 
         W = (weight_diff_sum / matching) if matching > 0 else 0.0
 
-        c1 = config.get("c1", 1.0)
-        c2 = config.get("c2", 1.0)
-        c3 = config.get("c3", 0.4)
+        c1 = config["c1"]
+        c2 = config["c2"]
+        c3 = config["c3"]
 
         distance = (c1 * excess / N) + (c2 * disjoint / N) + (c3 * W)
         
         return distance
+    
+    @classmethod
+    def crossover(cls, parent1: 'Genome', parent2: 'Genome', config: dict) -> 'Genome':
+        if parent1.fitness > parent2.fitness:
+            better_parent, worse_parent = parent1, parent2
+        elif parent2.fitness > parent1.fitness:
+            better_parent, worse_parent = parent2, parent1
+        else:
+            better_parent, worse_parent = random.choice([(parent1, parent2), (parent2, parent1)])
+
+        child = cls.__new__(cls)
+        child.fitness = 0.0
+        
+        child.neurons = {}
+        child.neuron_ids = []
+        child.inputs = []
+        child.outputs = []
+        child.inputs_and_bias = []
+        child.hidden = []
+        
+        for n_id, node in better_parent.neurons.items():
+            child.neurons[n_id] = Neuron(n_id, node.type)
+            child.neuron_ids.append(n_id)
+            if node.type == NeuronType.BIAS:
+                child.inputs_and_bias.append(n_id)
+            elif node.type == NeuronType.INPUT:
+                child.inputs.append(n_id)
+                child.inputs_and_bias.append(n_id)
+            elif node.type == NeuronType.OUTPUT:
+                child.outputs.append(n_id)
+            elif node.type == NeuronType.HIDDEN:
+                child.hidden.append(n_id)
+
+        child.synapses = []
+        
+        syn1 = sorted(better_parent.synapses, key=lambda x: x.innovation_id)
+        syn2 = sorted(worse_parent.synapses, key=lambda x: x.innovation_id)
+        
+        i, j = 0, 0
+        
+        inherit_avg = config["inherit_average_weight"]
+        disable_prob = config["disable_inherited_gene_prob"]
+        
+        while i < len(syn1) and j < len(syn2):
+            s_better = syn1[i]
+            s_worse = syn2[j]
+            
+            if s_better.innovation_id == s_worse.innovation_id:
+                if inherit_avg:
+                    new_weight = (s_better.weight + s_worse.weight) / 2.0
+                else:
+                    new_weight = s_better.weight if random.random() < 0.5 else s_worse.weight
+                    
+                new_synapse = Synapse(s_better.in_node_id, s_better.out_node_id, new_weight, s_better.innovation_id)
+                
+                if not s_better.is_enabled or not s_worse.is_enabled:
+                    new_synapse.is_enabled = False if random.random() < disable_prob else True
+                else:
+                    new_synapse.is_enabled = True
+                    
+                child.synapses.append(new_synapse)
+                i += 1
+                j += 1
+                
+            elif s_better.innovation_id < s_worse.innovation_id:
+                new_synapse = Synapse(s_better.in_node_id, s_better.out_node_id, s_better.weight, s_better.innovation_id)
+                new_synapse.is_enabled = s_better.is_enabled
+                child.synapses.append(new_synapse)
+                i += 1
+                
+            else:
+                j += 1
+                
+        while i < len(syn1):
+            s_better = syn1[i]
+            new_synapse = Synapse(s_better.in_node_id, s_better.out_node_id, s_better.weight, s_better.innovation_id)
+            new_synapse.is_enabled = s_better.is_enabled
+            child.synapses.append(new_synapse)
+            i += 1
+        
+        return child
