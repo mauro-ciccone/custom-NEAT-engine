@@ -12,3 +12,7 @@ __pycache__/
 # Operating System files (stops your Mac/Windows from polluting the repo)
 .DS_Store
 Thumbs.db
+
+# Backup Json
+
+xor_trained_backup
