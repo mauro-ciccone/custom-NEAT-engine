@@ -173,7 +173,7 @@ def main():
                     
                     if abs(car.speed) > 0.1:
                         desired_rotation = turn * car.speed * 0.05
-                        max_grip = 1.5 / max(abs(car.speed), 1.0)
+                        max_grip = 3.0 / max(car.speed * car.speed, 1.0)
                         car.angle += max(-max_grip, min(max_grip, desired_rotation))
                         
                     car.x += math.cos(car.angle) * car.speed

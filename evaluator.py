@@ -148,7 +148,7 @@ class CarEvaluator:
 
                 if abs(speed) > 0.1:
                     desired_rotation = turn * speed * 0.05
-                    max_grip = 1.5 / max(abs(speed), 1.0) 
+                    max_grip = 3.0 / max(speed * speed, 1.0)
                     actual_rotation = max(-max_grip, min(max_grip, desired_rotation))
                     angle += actual_rotation
                     
