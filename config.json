@@ -5,7 +5,7 @@
     "c2": 1.0,
     "c3": 0.4,
     "compatibility_threshold": 3.0,
-    "mate_best_percent" : 0.3,
+    "mate_best_percent" : 0.2,
     "genome_mutate_weights_prob" : 0.8,
     "mutate_weight_replace_prob" : 0.1,
     "disable_inherited_gene_prob" : 0.75,
@@ -28,7 +28,7 @@
     "species_dropoff_age" : 20,
     "small_genome_N" : 20,
     "species_champion_minsize" : 5,
-    "premature_cutoff" : 1400,
+    "premature_cutoff" : 3000,
     "ignore_N" : true,
     "extensive_log_per_gen" : 20
 }

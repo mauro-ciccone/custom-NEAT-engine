@@ -24,7 +24,7 @@ if __name__ == "__main__":
     print("Starting Evolution...")
     
     try:
-        winner = pop.run(lambda genomes, config, curr_gen: evaluate_population(genomes, config, executor, curr_gen), generations=201)
+        winner = pop.run(lambda genomes, config, curr_gen: evaluate_population(genomes, config, executor, curr_gen), generations=100)
         print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / 10000.0")
         
     except KeyboardInterrupt:
@@ -36,3 +36,6 @@ if __name__ == "__main__":
     print("Saving population state to disk...")
     pop.save_json(f"{config['environment']}_training_backup.json")
     print("Safely exited.")
+    
+    print("preview of next gen")
+    winner = pop.run(lambda genomes, config, curr_gen: evaluate_population(genomes, config, executor, curr_gen), generations=1)

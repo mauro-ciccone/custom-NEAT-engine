@@ -264,3 +264,5 @@ class Population:
                 children_spawned += 1
         
         self.genomes = next_generation
+
+        self.current_generation += 1
