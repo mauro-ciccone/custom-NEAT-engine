@@ -95,7 +95,7 @@ def main():
     cars = [Car(g, config, i) for i, g in enumerate(pop.genomes)]
     
     sensor_angles = [-math.pi/4, 0, math.pi/4]
-    max_sensor_length = 300.0
+    max_sensor_length = 800.0
     frames_per_track = 1600 
 
     for track_idx in range(5):
@@ -228,6 +228,11 @@ def main():
                     p2 = to_screen(car.x + math.cos(car.angle + 2.5) * 12, car.y + math.sin(car.angle + 2.5) * 12)
                     p3 = to_screen(car.x + math.cos(car.angle - 2.5) * 12, car.y + math.sin(car.angle - 2.5) * 12)
                     pygame.draw.polygon(screen, (50, 255, 50) if car.is_alive else (150, 0, 0), [p1, p2, p3])
+
+                    car_pos = to_screen(car.x, car.y)
+                    for hit in car.hit_points:
+                        hit_pos = to_screen(hit[0], hit[1])
+                        pygame.draw.line(screen, (255, 50, 50), car_pos, hit_pos, 1)
 
             # --- UI OVERLAYS ---
             for car in cars:

@@ -96,7 +96,7 @@ class CarEvaluator:
             self.tracks.append({"walls": walls, "checkpoints": checkpoints})
        
         self.sensor_angles = [-math.pi/4, 0, math.pi/4]
-        self.max_sensor_length = 300.0
+        self.max_sensor_length = 800.0
         
     def evaluate_genome(self, genome) -> float:
         total_fitness = 0.0
