@@ -16,7 +16,7 @@ class NeuralNetwork:
             "tanh": math.tanh,
             "weak_tanh": lambda x: math.tanh(x * 0.5),
             "relu": lambda x: max(0.0, x),
-            "binary": lambda x: 1.0 if x > 0.5 else 0.0
+            "binary": lambda x: 1 if x > 0.5 else 0
         }
 
         self.activation_function = self.activation_functions[config["activation_function"]]

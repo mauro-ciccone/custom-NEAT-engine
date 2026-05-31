@@ -1,6 +1,7 @@
 import math
 import random
 from phenotype import NeuralNetwork
+import gymnasium as gym
 
 class XOREvaluator:
     def __init__(self, config: dict) -> None:
@@ -175,6 +176,49 @@ class CarEvaluator:
             total_fitness += max(0.0, fitness + min(y * 0.05, 10))
         
         return total_fitness / self.num_tracks
+
+class GymnasiumEvaluator:
+    def __init__(self, config: dict, gen_as_seed: int):
+        self.config = config
+        self.gen_as_seed = gen_as_seed # Keep the same signature as CarEvaluator!
+        
+    def evaluate_genome(self, genome) -> float:
+        env = gym.make(self.config["gym_task"])
+        
+        network = NeuralNetwork(genome, self.config)
+        
+        total_fitness = 0.0
+        num_trials = self.config["num_trials"]
+        
+        for trial in range(num_trials):
+            network.reset()
+            
+            current_seed = (self.gen_as_seed * 10) + trial
+            state, info = env.reset(seed=current_seed)
+
+            trial_fitness = 0.0
+            
+            while True:
+                outputs = network.feed_forward(state)
+
+                if self.config["use_arg_max"]:
+                    action = outputs.index(max(outputs))
+                else:
+                    if len(outputs) > 1: 
+                        action = outputs
+                    else:
+                        action = outputs[0]
+            
+                state, reward, terminated, truncated, info = env.step(action)
+                total_fitness += float(reward)
+
+                if terminated or truncated:
+                    break
+            
+            total_fitness += trial_fitness
+                
+        env.close()
+        return total_fitness / num_trials
     
 def evaluate_genomes_batch(genomes_chunk: list, config: dict, curr_gen: int) -> list[float]:
     environment = config["environment"]
@@ -184,6 +228,8 @@ def evaluate_genomes_batch(genomes_chunk: list, config: dict, curr_gen: int) -> 
         evaluator = CarEvaluator(config, curr_gen)
     elif environment == "circle":
         evaluator = CircleEvaluator(config)
+    elif environment == "gym":
+        evaluator = GymnasiumEvaluator(config, curr_gen)
     else:
         raise ValueError(f"Unknown environment in config: {environment}")
         
