@@ -12,7 +12,7 @@ def init_worker():
 
 if __name__ == "__main__":
 
-    load_backup = True
+    load_backup = False
 
     executor = concurrent.futures.ProcessPoolExecutor(initializer=init_worker)
 
