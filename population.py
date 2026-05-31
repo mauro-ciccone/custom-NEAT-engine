@@ -118,7 +118,7 @@ class Population:
                 print(f" 🧠 Topo Size  : {len(best_genome.neuron_ids)} Nodes | {len(best_genome.synapses)} Genes")
                 print("="*40)
             else:
-                print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / 10000.0")
+                print(f"Gen {generation} | Best Fitness: {best_genome.fitness:.3f} / {self.config['max_fitness']}")
     
             if best_genome.fitness >= self.config["premature_cutoff"]:
                 print("Solution found!")
