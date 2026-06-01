@@ -105,9 +105,10 @@ class Population:
 
             evaluator_function(self.genomes, self.config, self.current_generation)
             best_genome = max(self.genomes, key=lambda g: g.fitness)
+            worst_genome = min(self.genomes, key=lambda g: g.fitness)
 
             current_best = max(current_best, best_genome.fitness)
-            current_floor = min(current_floor, best_genome.fitness)
+            current_floor = min(current_floor, worst_genome.fitness)
             
 
             if generation % self.config["extensive_log_per_gen"] == 0 or generation == 0:
@@ -187,7 +188,13 @@ class Population:
         total_population_fitness = 0.0
         dropoff_age = self.config["species_dropoff_age"]
 
-        global_best_fitness = max((g.fitness for g in self.genomes), default=0.0)
+        global_best_fitness = max(g.fitness for g in self.genomes)
+        min_genome_fitness = min(g.fitness for g in self.genomes)
+
+        shift = abs(min_genome_fitness) + 1.0 if min_genome_fitness <= 0 else 0.0
+
+        for g in self.genomes:
+            g.fitness += shift
 
         for species in self.species_list:
             if len(species.members) > 0:
