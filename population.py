@@ -2,6 +2,10 @@ from genotype import Genome
 import json
 import random
 import os
+from gymnasium.wrappers import RecordVideo
+import gymnasium as gym
+from phenotype import NeuralNetwork
+import math
 
 class Species:
     def __init__(self, species_id: int, mascot: Genome):
@@ -136,6 +140,8 @@ class Population:
                 # Save to that specific path
                 self.save_json(filepath)
                 print(f"--- Auto-saved generation {self.current_generation} to auto_saves / ---")
+
+                self.render_best(best_genome)
                 
             self.speciate()
 
@@ -144,6 +150,28 @@ class Population:
             self.reproduce()
             
         return max(self.genomes, key=lambda g: g.fitness)
+    
+    def render_best(self, best_genome):
+        base_env = gym.make("BipedalWalker-v3", render_mode="rgb_array")
+        network = NeuralNetwork(best_genome, self.config)
+    
+        # This automatically records the episode and saves it to a folder
+        showcase_env = RecordVideo(base_env, video_folder="showcase_videos", name_prefix=f"gen_{self.current_generation}")
+
+        state, _ = showcase_env.reset(seed=self.current_generation*10)
+        terminated = False
+        truncated = False
+        step_count = 0
+
+        while not (terminated or truncated):
+            step_count += 1
+
+            outputs = network.feed_forward(state)
+
+            action = outputs
+            state, reward, terminated, truncated, info = showcase_env.step(action)
+        
+        showcase_env.close()
     
     def speciate(self):
         for species in self.species_list:
