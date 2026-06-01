@@ -152,7 +152,7 @@ class Population:
         return max(self.genomes, key=lambda g: g.fitness)
     
     def render_best(self, best_genome):
-        base_env = gym.make("BipedalWalker-v3", render_mode="rgb_array")
+        base_env = gym.make(self.config["gym_task"], render_mode="rgb_array")
         network = NeuralNetwork(best_genome, self.config)
     
         # This automatically records the episode and saves it to a folder

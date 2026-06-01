@@ -207,7 +207,8 @@ class GymnasiumEvaluator:
                     if len(outputs) > 1: 
                         action = outputs
                     else:
-                        action = outputs[0]
+                        #action = outputs[0]
+                        action = outputs
             
                 state, reward, terminated, truncated, info = env.step(action)
                 total_fitness += float(reward)
