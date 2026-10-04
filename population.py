@@ -132,7 +132,7 @@ class Population:
                 print("Solution found!")
                 return best_genome
             
-            if self.current_generation % self.config["autosave_intervall"] == 0:
+            if self.current_generation % self.config["autosave_intervall"] == 0 and self.config["environment"] == "gym":
                 # Construct the path: "auto_saves/generation_30.json"
                 filename = f"gen_{self.current_generation}_backup.json"
                 filepath = os.path.join("auto_saves", filename)
@@ -168,7 +168,14 @@ class Population:
 
             outputs = network.feed_forward(state)
 
-            action = outputs
+            if self.config["use_arg_max"]:
+                    action = outputs.index(max(outputs))
+            else:
+                    if len(outputs) > 1: 
+                        action = outputs
+                    else:
+                        #action = outputs[0]
+                        action = outputs
             state, reward, terminated, truncated, info = showcase_env.step(action)
         
         showcase_env.close()

@@ -12,7 +12,7 @@ def init_worker():
 
 if __name__ == "__main__":
 
-    load_backup = True
+    load_backup = False
 
     executor = concurrent.futures.ProcessPoolExecutor(initializer=init_worker)
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     print(f"Starting Evolution...\n\n\n")
     
     try:
-        winner = pop.run(lambda genomes, config, curr_gen: evaluate_population(genomes, config, executor, curr_gen), generations=600)
+        winner = pop.run(lambda genomes, config, curr_gen: evaluate_population(genomes, config, executor, curr_gen), generations=1000)
         print(f"\nTraining Complete! Best Fitness: {winner.fitness:.3f} / {config['max_fitness']}")
         
     except KeyboardInterrupt:

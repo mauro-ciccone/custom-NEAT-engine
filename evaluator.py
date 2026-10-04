@@ -2,6 +2,7 @@ import math
 import random
 from phenotype import NeuralNetwork
 import gymnasium as gym
+from game_2048 import Game2048
 
 class XOREvaluator:
     def __init__(self, config: dict) -> None:
@@ -177,6 +178,52 @@ class CarEvaluator:
         
         return total_fitness / self.num_tracks
 
+class Game2048Evaluator:
+    def __init__(self, config: dict, gen_as_seed: int):
+        self.config = config
+        self.gen_as_seed = gen_as_seed
+
+    def evaluate_genome(self, genome) -> float:
+        network = NeuralNetwork(genome, self.config)
+        num_trials = self.config.get("num_trials", 3)
+        total_fitness = 0.0
+
+        for trial in range(num_trials):
+            # Seed ensure reproducible fair trial comparison per generation
+            random.seed((self.gen_as_seed * 100) + trial)
+            game = Game2048()
+            network.reset()
+
+            moves = 0
+            max_moves = 3000
+
+            while not game.is_game_over() and moves < max_moves:
+                state = game.get_normalized_state()
+                outputs = network.feed_forward(state)
+
+                # Order 4 output nodes by preference rank
+                action_preferences = sorted(range(4), key=lambda i: outputs[i], reverse=True)
+                valid_moves = game.get_valid_moves()
+
+                if not valid_moves:
+                    break
+
+                # Choose highest-ranked valid action to avoid wasted turns
+                chosen_action = next((act for act in action_preferences if act in valid_moves), None)
+
+                if chosen_action is None:
+                    break
+
+                game.move(chosen_action)
+                moves += 1
+
+            # Fitness calculation combining score and highest tile bonus
+            max_tile = game.get_max_tile()
+            fitness = float(game.score) + (max_tile * 2.0)
+            total_fitness += fitness
+
+        return total_fitness / num_trials
+
 class GymnasiumEvaluator:
     def __init__(self, config: dict, gen_as_seed: int):
         self.config = config
@@ -231,6 +278,8 @@ def evaluate_genomes_batch(genomes_chunk: list, config: dict, curr_gen: int) -> 
         evaluator = CircleEvaluator(config)
     elif environment == "gym":
         evaluator = GymnasiumEvaluator(config, curr_gen)
+    elif environment == "2048":
+        evaluator = Game2048Evaluator(config, curr_gen)
     else:
         raise ValueError(f"Unknown environment in config: {environment}")
         
